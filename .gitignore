@@ -1,0 +1,13 @@
+node_modules
+.tmp
+.sass-cache
+.sass-cache/*
+*.log
+npm-debug.log
+www/
+.env
+.vscode
+*.log
+views/about.ejs.orig
+.idea/
+.editorconfig
