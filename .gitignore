@@ -11,3 +11,4 @@ www/
 views/about.ejs.orig
 .idea/
 .editorconfig
+bower_components
