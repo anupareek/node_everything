@@ -36,7 +36,8 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  '/ngapp' : {view:'ngappPage'}
+  '/ngapp' : {view:'ngappPage'},
+  '/shoppingPage' : {view:'shoppingPage'}
 
   /***************************************************************************
   *                                                                          *
