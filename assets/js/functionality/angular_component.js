@@ -4,17 +4,17 @@ angular.module('mod1', []).controller('invoiceController', function invoiceContr
 	this.curr = 'EUR';
 	this.currencies = ['EUR', 'USD', 'CNY'];
 	this.REtoCurrencies = {
-		RE: 1,
+		CNY: 1,
 		EUR: 100,
 		USD: 70.12
 	};
 
-	this.total = function totalprice(outcurr) {
-		return this.convertCurrency(this.qty * this.price, this.inCurr, outcurr);
+	this.total = function total(outcurr) {
+		return this.convertCurrency(this.qty * this.price, this.curr, outcurr);
 	};
 
 	this.convertCurrency = function convertCurrency(amount, incurr, outCurr) {
-		return amount * this.currencies[outCurr] / this.currencies[incurr];
+		return amount * this.REtoCurrencies[outCurr] / this.REtoCurrencies[incurr];
 	};
 
 	this.pay = function paid() {

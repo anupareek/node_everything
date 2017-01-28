@@ -1,7 +1,7 @@
 <div ng-app='mod1' ng-controller='invoiceController as inv'>
 
-qty ::<input type="number" min="0" ng-modal="inv.qty">
-cst ::<input type="number" min="0" ng-modal="inv.price">
+qty ::<input type="number" min="0" ng-modal="inv.qty" required>
+cst ::<input type="number" min="0" ng-modal="inv.price" required>
 
 <select ng-modal="inv.curr">
 	<option ng-repeat="val in inv.currencies">{{val}}</option>
