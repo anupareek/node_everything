@@ -2,7 +2,7 @@
 qty ::<input type="number" min="0" ng-model="inv.qty" required>
 cst ::<input type="number" min="0" ng-model="inv.price" required>
 
-<select ng-modal="inv.curr">
+<select ng-model="inv.curr">
 	<option ng-repeat="val in inv.currencies">{{val}}</option>
 </select>
 
