@@ -1,4 +1,5 @@
-angular.module('mod2', ['common']).controller('invoiceController2', ['currencyConvertor', function() {
+angular.module('mod2', ['CommonCtrl'])
+.controller('InvoiceCtrl', ['currencyConvertor', function InvoiceCtrl(currencyConvertor) {
 	this.qty = 5;
 	this.price = 2;
 	this.curr = 'EUR';
@@ -9,9 +10,13 @@ angular.module('mod2', ['common']).controller('invoiceController2', ['currencyCo
 		USD: 70.12
 	};
 	this.total = function total(outcurr) {
-		return currencyConvertor.convertCurrency(this.qty * this.price, this.curr, outcurr);
+		return currencyConvertor.convert(this.qty * this.price, this.curr, outcurr);
 	};
 	this.pay = function paid() {
 		alert('Thank you , Visit again!!');
 	};
-}]);
+}
+
+
+
+]);
