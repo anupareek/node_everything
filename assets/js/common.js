@@ -1,5 +1,5 @@
 angular.module('CommonCtrl', [])
-	.factory('currencyConvertor', ['', function() {
+	.factory('currencyConvertor', function() {
 
 		var currencies = ['EUR', 'USD', 'CNY'];
 		var REtoCurrencies = {
@@ -9,11 +9,11 @@ angular.module('CommonCtrl', [])
 		};
 
 		var convertCurrency = function (amount, incurr, outCurr) {
-			return amount * this.REtoCurrencies[outCurr] / this.REtoCurrencies[incurr];
+			return amount * REtoCurrencies[outCurr] / REtoCurrencies[incurr];
 		};
 
 		return {
 			currencies: currencies,
 			convert: convertCurrency
 		};
-	}]);
+	});
