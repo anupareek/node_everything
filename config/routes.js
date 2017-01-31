@@ -44,6 +44,9 @@ module.exports.routes = {
   },
   '/shoppingPage2': {
     view: 'shoppingPage2'
+  },
+  '/buttonclicks': {
+    view: 'buttonclick'
   }
 
   /***************************************************************************
