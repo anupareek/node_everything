@@ -47,6 +47,12 @@ module.exports.routes = {
   },
   '/buttonclicks': {
     view: 'buttonclick'
+  },
+  '/buttonclickservice': {
+    view: 'buttonclickservice'
+  },
+  '/buttonclickservice2': {
+    view: 'buttonclickservice2'
   }
 
   /***************************************************************************
