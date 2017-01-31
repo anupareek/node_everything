@@ -1,5 +1,5 @@
-angular.module('mod2', ['CommonCtrl'])
-.controller('InvoiceCtrl', ['currencyConvertor', function InvoiceCtrl(currencyConvertor) {
+angular.module('mod2', ['CommonHttpCtrl'])
+.controller('InvoiceCtrl', ['currencyConvertor', function (currencyConvertor) {
 	this.qty = 5;
 	this.price = 2;
 	this.curr = 'EUR';
