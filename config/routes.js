@@ -48,6 +48,9 @@ module.exports.routes = {
   '/buttonclicks': {
     view: 'buttonclick'
   },
+  '/filterUsage': {
+    view: 'filterUsage'
+  },
   '/buttonclickservice': {
     view: 'buttonclickservice'
   },

@@ -1,0 +1,11 @@
+
+
+<div ng-app="filterModule" ng-controller="filterController">
+<p>Invoice</p>
+val is :<input type="text" min="0" ng-model="a">
+without filter :: {{a}}
+with filter :: {{a | myfilter}}
+with filter + uppercase :: {{a |myfilter:true}}
+without filter :: {{filterInControllerA}}
+
+</div>
